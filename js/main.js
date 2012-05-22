@@ -1,5 +1,5 @@
 $(function(){
-  $("#main > ul:first-child").attr('id','active-section');
+  $("#main > ul:first-child").attr('class','active-section');
   $("#main > ul:not(:first-child)").css("display","none");
   $("#main > ul h1").css("position","fixed");
   $("#menu a:first").attr('id','current');
