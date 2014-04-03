@@ -71,11 +71,22 @@ article > img {
 }
 
 figure {
+  width: 100%;
   z-index: 2;
   margin: 0;
   padding: 0;
+  height: 800px;
   position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+#games > figure { z-index: 0; background-image: url(../images/losttoys.jpg); }
+#mobile > figure { background-image: url(../images/kala.jpg); }
+#apps > figure { background-image: url(../images/reddish.jpg); }
+#other > figure { background-image: url(../images/other.jpg); }
+#contact > figure { background-image: url(../images/contact.jpg); }
 
 footer {
   clear: both;
@@ -95,32 +106,7 @@ footer {
   }
 }
 
-@media (min-width: 769px) {
-  figure {
-    display: table;
-    height: 800px;
-    width: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
-  #games > figure { z-index: 0; background-image: url(../images/losttoys.jpg); }
-  #mobile > figure { background-image: url(../images/kala.jpg); }
-  #apps > figure { background-image: url(../images/reddish.jpg); }
-  #other > figure { background-image: url(../images/other.jpg); }
-  #contact > figure { background-image: url(../images/contact.jpg); }
-}
-
 @media (max-width: 768px) {
-  header {
-    position: relative;
-    bottom: -250px;
-    width: 0px;
-    height: 0px;
-  }
-
   h1 {
     font-size: 80px;
     line-height: 52px;
@@ -134,13 +120,6 @@ footer {
     line-height: 42px;
   }
 
-  figure {
-    height: 401px;
-    background-repeat: no-repeat;
-    background-size: 768px 401px;
-    background-position: center;
-  }
-
   #games > figure { z-index: 0; background-image: url(../mobile/losttoys.jpg); }
   #mobile > figure { background-image: url(../mobile/kala.jpg); }
   #apps > figure { background-image: url(../mobile/reddish.jpg); }
@@ -149,10 +128,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  header {
-    bottom: -200px;
-  }
-
   h1 {
     font-size: 48px;
     line-height: 32px;
@@ -161,10 +136,5 @@ footer {
   h1 span {
     font-size: 28px;
     text-indent: 2px;
-  }
-
-  figure {
-    height: 300px;
-    background-size: 574px 300px;
   }
 }

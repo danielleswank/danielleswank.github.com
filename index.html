@@ -111,5 +111,18 @@
       <p>Copyright 2014 Danielle Swank. All rights reserved. <a href="//github.com/danielleswank/danielleswank.github.com/blob/master/index.html" target="_blank">View Source</a>.</p>
     </footer>
 
+    <script>
+    (function () {
+      var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowssce|palm/i.test(navigator.userAgent.toLowerCase()));
+
+      if (!mobile) {
+        var figures = document.getElementsByTagName("figure");
+        for (var i = 0; i < figures.length; i++) {
+          figures[i].style.backgroundAttachment = "fixed";
+        }
+      }
+    }());
+    </script>
+
   </body>
 </html>
