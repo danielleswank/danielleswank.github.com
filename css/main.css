@@ -1,310 +1,115 @@
-section, header, footer, menu, aside, figure, figcaption, nav {display: block;}
+section, header, footer, menu, aside, article, nav {display: block;}
 
-/* LAYOUT 
------------------------------------*/
+html,
 body {
-  background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #444;
-  text-shadow: #fff 1px 1px 0;
-  margin: 0;
-}
-br {
-  display: block;
-  line-height: 72px;
-}
-/* LIST STYLE 
------------------------------------*/
-menu, ul, li { 
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-indent: 0;
-}
-ul { margin: 5px 0; }
-
-/* LINK STYLE
------------------------------------*/
-a {
-  color: #7D7D7D;
-  text-decoration: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-a:hover { color: #555; text-decoration: underline; }
-
-#main ul:first-child .information {
-/*
-  font-size: 18px;
-  line-height: 24px;
-*/
-}
-#main ul:first-child .information {
-
-}
-#main ul:first-child .information a{
-  color: rgb(242,118,101);
-}
-
-/* HEADING STYLE
------------------------------------*/
-h1 {
-  position: relative;
-  top:0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0 5%;
-  font-size: 96px;
-  line-height: 144px;
-  background: rgb(255,255,255);
-  background: rgba(255,255,255,1);
-  border-bottom: 1px solid #e8eae2;
-}
-h2, #ux-director h3 {
-  font-size: 52px;
-  line-height: 52px;
-  margin: 0;
-  padding: 5px 0 6px 0;
-  text-transform: lowercase;
-  color: #888;
-}
-#ux-director h3 {
-  margin: 24px 0 0 0;
-}
-h3 {
-  margin: 48px 0 24px 0;
-  padding: 0;
-}
-h4 {
-  margin: 0 0 24px 0;
-  padding: 0;
-}
-header {
-  border-bottom: 1px solid #e8eae2;
-  padding: 16px 0;
-}
-header ul {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 36px;
-  text-transform: lowercase;
-  overflow: hidden;
-}
-header li {
-  margin-right: 24px;
-  float: left;
-}
-/* FOOTER STYLE
------------------------------------*/
-footer{
-  position: fixed;
-  bottom: 0;
-  border-top: 1px solid #e8eae2;
-  background: white;
-  left: 0;
-  right: 0;
-  
-}
-footer ul {
-  clear: both;
-  padding: 0 5%;
-  margin: 0;
-}
-footer li {
-  float: left;
-  margin: 0 36px 0 0;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 48px;
-}
-footer li:last-child { margin: 0; }
-
-
-/* MAIN MENU STYLE
------------------------------------*/
-#menu {
-  right:10px;
-  position: fixed;
-  z-index: 1;
-  top: 9px;
-}
-#menu menu{
-  float: left;
-}
-#menu menu li {
-  margin: 0px;
-}
-#menu a {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  display: block;
-  margin: 2px;
-  text-indent: -99999em;
-}
-menu.danielle-swank.engaged a, section menu.danielle-swank:hover a, section menu.engaged a.danielle-swank, a.danielle-swank {
-  background: rgb(179,179,179);
-  background: rgba(0,0,0,.3);
-}
-menu.ia-and-ux.engaged a, section menu.ia-and-ux:hover a, section menu.engaged a.ia-and-ux, a.ia-and-ux {
-  background: #f6eecb;
-  background: rgba(226,199,79,.3);
-}
-menu.design.engaged a, section menu.design:hover a, section menu.engaged a.design, a.design {
-  background: #cbd9dc;
-  background: rgba(150,178,185,.5);
-}
-menu.development.engaged a, section menu.development:hover a, section menu.engaged a.development, a.development {
-  background: #cfd0b9;
-  background: rgba(158,161,114,.5);
-}
-menu.creative-direction.engaged a, section menu.creative-direction:hover a, section menu.engaged a.creative-direction, a.creative-direction {
-  background: #f9bbb2;
-  background: rgba(242,118,101,.5);
-}
-menu.project-management.engaged a, section menu.project-management:hover a, section menu.engaged a.project-management, a.project-management {
-  background: #e5d9cb;
-  background: rgba(202,179,150,.5);
-}
-section#menu menu li a.active{
-  box-shadow: 0 0 2px rgb(179,179,179);
-  box-shadow: 0 0 2px rgba(0,0,0,.5);
-  background: #fff;
-}
-section#menu menu li a#current{
-  width: 4px;
-  height: 4px;
-  box-shadow: 0 0 1px #333;
-  box-shadow: 0 0 1px rgba(0,0,0,.3);
-  background: #fff;
-}
-.danielle-swank a#current {
-  border: 8px solid rgb(179,179,179);
-  border: 8px solid rgba(0,0,0,.7);
-}
-.ia-and-ux a#current {
-  border: 8px solid rgb(226,199,79);
-}
-.design a#current {
-  border: 8px solid rgb(150,178,185);
-}
-.development a#current {
-  border: 8px solid rgb(158,161,114);
-}
-.creative-direction a#current {
-  border: 8px solid rgb(242,118,101);
-}
-.project-management a#current {
-  border: 8px solid rgb(202,179,150);
-}
-
-
-/* MAIN CONTENT STYLE
------------------------------------*/
-section#main {
-  position: relative;
-  font-size: 36px;
-  line-height: 42px;
-  margin: auto;
-  bottom: 0;
-  white-space: nowrap;  
-}
-p.information {
-  margin: 24px 0 48px 0;
-}
-section#main > ul {
-  vertical-align: top;
-  white-space: normal;
   margin: 0;
   padding: 0;
   width: 100%;
-  height:100%;
-  display: inline-block;
-}
-section#main > ul > li {
-  padding: 138px 5%;
-  margin: 0;
-  min-height: 550px;
-  overflow: hidden;
-}
-section#main > ul > li figure {
-  float: left;
-  margin: 24px 24px 24px 0;
-  text-align: center;
-  font-style: italic;
+  height: 100%;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 18px;
+  line-height: 24px;
+  color: #444;
 }
-section#main > ul > li img {
-  border: 24px solid #ddd; 
+
+header {
+  z-index: 1;
+  position: absolute;
+  bottom:10%;
+  left: 10%
 }
-section#main li menu {
+
+h1 {
+  font-size: 160px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 96px;
+  margin: 0;
+  padding: 0;
+}
+
+h1 span {
+  display: block;
+  font-size: 72px;
+  text-indent: 5px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h4 {
+  color: #666;
+}
+
+p {
+  margin-bottom: 24px;
+}
+
+a {
+  text-decoration: none;
   font-weight: bold;
-  text-transform: lowercase;
-  overflow: hidden;
-  margin: 12px 0;
-}
-section#main li menu li {float: right; margin-right: 12px; margin-bottom: 12px;}
-section#main li#ux-director menu li {float: left; margin-right: 12px;}
-section#main li menu li:first-child {float: left;}
-section#main .information { font-size: 24px;  line-height: 36px;}
-
-section#main aside {
-  float: left;
-  margin: 0 24px 24px 0;
-  width: 40%;
+  color: #4393d0;
 }
 
-#danielle-swank a { color: rgb(0,0,0); }
-#danielle-swank > li, #danielle-swank h1 {
-  border-top: 4px solid rgb(179,179,179);
-  border-top: 4px solid rgba(0,0,0,.5);
-}
-#ia-and-ux a{ color: rgb(226,199,79); }
-section#main > ul > li .ia-and-ux img{
-  border: 24px solid rgb(226,199,79);
-}
-#ia-and-ux > li,#ia-and-ux h1{
-  border-top: 4px solid rgb(226,199,79);
-}
-#design a{ color: rgb(150,178,185); }
-section#main > ul > li .design img{
-  border: 24px solid rgb(150,178,185);
-}
-#design > li, #design h1{
-  border-top: 4px solid rgb(150,178,185);
+a:hover {
+  color: #236ea7;
 }
 
-#development a{ color: rgb(158,161,114); }
-section#main > ul > li .development img{
-  border: 24px solid rgb(158,161,114);
-}
-#development > li, #development h1{
-  border-top: 4px solid rgb(158,161,114);
-}
-#creative-direction a{ color: rgb(242,118,101); }
-section#main > ul > li .creative-direction img{
-  border: 24px solid rgb(242,118,101);
-}
-#creative-direction > li, #creative-direction h1{
-  border-top: 4px solid rgb(242,118,101);
-}
-#project-management a{ color: rgb(202,179,150); }
-section#main > ul > li .project-management img{
-  border: 24px solid rgb(202,179,150);
-}
-#project-management > li, #project-management h1{
-  border-top: 4px solid rgb(202,179,150);
-}
-section#main > ul > li menu a:hover img{
-  border: 24px solid #ddd;
+article {
+  z-index: 10;
+  position: relative;
+  margin: 10%;
+  min-height: 200px;
+  background: #fff;
 }
 
-.hidden {display: none;}
-#section-heading {position: fixed;}
+article > img {
+  float: right;
+  margin: 0 0 10% 15%;
+  width: 33%;
+}
+
+figure {
+  z-index: 2;
+  display: table;
+  height: 800px;
+  width: 100%;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#games > figure {
+  z-index: 0;
+  background-image: url(../images/losttoys.jpg);
+}
+
+#mobile > figure {
+  background-image: url(../images/kala.jpg);
+}
+
+#apps > figure {
+  background-image: url(../images/reddish.jpg);
+}
+
+#other > figure {
+  background-image: url(../images/other.jpg);
+}
+
+#contact > figure {
+  background-image: url(../images/contact.jpg);
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  color: #999;
+}
