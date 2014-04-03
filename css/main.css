@@ -72,16 +72,9 @@ article > img {
 
 figure {
   z-index: 2;
-  display: table;
-  height: 800px;
-  width: 100%;
-  position: relative;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 footer {
@@ -103,6 +96,16 @@ footer {
 }
 
 @media (min-width: 769px) {
+  figure {
+    display: table;
+    height: 800px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   #games > figure { z-index: 0; background-image: url(../images/losttoys.jpg); }
   #mobile > figure { background-image: url(../images/kala.jpg); }
   #apps > figure { background-image: url(../images/reddish.jpg); }
@@ -113,7 +116,7 @@ footer {
 @media (max-width: 768px) {
   header {
     position: relative;
-    bottom: -300px;
+    bottom: -250px;
     width: 0px;
     height: 0px;
   }
@@ -131,16 +134,11 @@ footer {
     line-height: 42px;
   }
 
-  section {
-    overflow-x: hidden;
-  }
-
   figure {
-    display: block;
     height: 401px;
-    background-attachment: scroll;
+    background-repeat: no-repeat;
     background-size: 768px 401px;
-    background-position: center center;
+    background-position: center;
   }
 
   #games > figure { z-index: 0; background-image: url(../mobile/losttoys.jpg); }
