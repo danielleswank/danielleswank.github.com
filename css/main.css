@@ -136,10 +136,11 @@ footer {
   }
 
   figure {
-    height: 480px;
-    width: 919px;
+    display: block;
+    height: 401px;
     background-attachment: scroll;
-    background-size: 100% 100%;
+    background-size: 768px 401px;
+    background-position: center center;
   }
 
   #games > figure { z-index: 0; background-image: url(../mobile/losttoys.jpg); }
@@ -166,7 +167,6 @@ footer {
 
   figure {
     height: 300px;
-    width: 574px;
-    background-size: 100% 100%;
+    background-size: 574px 300px;
   }
 }
