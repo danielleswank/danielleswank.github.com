@@ -1,4 +1,4 @@
-section, header, footer, menu, aside, article, nav {display: block;}
+section, header, footer, menu, aside, article, nav, figure {display: block;}
 
 html,
 body {
