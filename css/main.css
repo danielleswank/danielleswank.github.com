@@ -90,14 +90,6 @@ footer {
   color: #999;
 }
 
-@media (min-width: 769px) {
-  #games > figure { z-index: 0; background-image: url(../images/losttoys.jpg); }
-  #mobile > figure { background-image: url(../images/kala.jpg); }
-  #apps > figure { background-image: url(../images/reddish.jpg); }
-  #other > figure { background-image: url(../images/other.jpg); }
-  #contact > figure { background-image: url(../images/contact.jpg); }
-}
-
 @media (max-width: 960px) {
   h1 {
     font-size: 120px;
@@ -108,6 +100,14 @@ footer {
     font-size: 72px;
     text-indent: 3px;
   }
+}
+
+@media (min-width: 769px) {
+  #games > figure { z-index: 0; background-image: url(../images/losttoys.jpg); }
+  #mobile > figure { background-image: url(../images/kala.jpg); }
+  #apps > figure { background-image: url(../images/reddish.jpg); }
+  #other > figure { background-image: url(../images/other.jpg); }
+  #contact > figure { background-image: url(../images/contact.jpg); }
 }
 
 @media (max-width: 768px) {
@@ -131,10 +131,15 @@ footer {
     line-height: 42px;
   }
 
+  section {
+    overflow-x: hidden;
+  }
+
   figure {
     height: 480px;
+    width: 919px;
     background-attachment: scroll;
-    background-size: 919px 480px;
+    background-size: 100% 100%;
   }
 
   #games > figure { z-index: 0; background-image: url(../mobile/losttoys.jpg); }
@@ -146,9 +151,7 @@ footer {
 
 @media (max-width: 480px) {
   header {
-    position: relative;
     bottom: -200px;
-    height: 0px;
   }
 
   h1 {
@@ -163,6 +166,7 @@ footer {
 
   figure {
     height: 300px;
-    background-size: 574px 300px;
+    width: 574px;
+    background-size: 100% 100%;
   }
 }
