@@ -1,4 +1,6 @@
 danielleswank.github.com
 ========================
 
-Danielle Swank portfolio page
+Portfolio site for Danielle Swank
+
+http://danielleswank.com
