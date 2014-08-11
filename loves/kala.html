@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <title>Kala : Danielle Swank</title>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900|Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/inner.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="/" class="first">Danielle Swank</a>
+      <a href="/loves/losttoys.html">Lost Toys</a>
+      <a href="/loves/reddish.html">Reddish</a>
+      <a href="/loves/kenco.html">Kenco</a>
+      <a href="/loves/kala.html">Kala</a>
+      <a href="/loves/otherstuff.html">Other Stuff</a>
+    </nav>
+
+    <header>
+        <h1>Kala</h1>
+        <h2>Money management for people that don't.</h2>
+        <h3>designer / front-end developer</h3>
+    </header>
+
+    <section id="kala" class="image"></section>
+
+    <section class="content">
+      <h3>So what is this project?</h3>
+      <p>Kala is a financial app designed for people that don't like financial apps. It’s job is to give you friendly snapshots of your finances without any irrelevant or scary feedback. You just know whether or not to make your next purchase and can move on with your day. Kala came out of my experiances using Mint while learning to track my finances in collage.</p>
+
+      <h3>Ok cool, so what did you actually do?</h3>
+      <ul>
+        <li>Designed app ux.</li>
+        <li>Created look and feel of app.</li>
+        <li>Coded front-end MVP in html / javascript using Phone Gap.</li>
+      </ul>
+
+      <h3>Collateral</h3>
+      <figure>
+        <img src="/images/kala-app.png" alt="App">
+        <figcaption>App</figcaption>
+      </figure>
+
+    </section>
+
+    <footer>
+      <p>Copyright 2014 Danielle Swank. All rights reserved. <a href="//github.com/danielleswank/danielleswank.github.com/blob/master/index.html" target="_blank">View Source</a>.</p>
+    </footer>
+
+    <script>
+    (function () {
+      var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
+
+      if (!mobile) {
+        var figures = document.getElementsByTagName("figure");
+        for (var i = 0; i < figures.length; i++) {
+          figures[i].style.backgroundAttachment = "fixed";
+        }
+        var nav = document.getElementsByTagName("nav");
+        nav[0].style.position = "fixed";
+
+        var body = document.getElementsByTagName("body");
+        body[0].style.marginTop = "24px";
+      }
+    }());
+    </script>
+  </body>
+</html>

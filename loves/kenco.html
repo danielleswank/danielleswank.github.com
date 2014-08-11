@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <title>Kenco : Danielle Swank</title>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900|Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/inner.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="/" class="first">Danielle Swank</a>
+      <a href="/loves/losttoys.html">Lost Toys</a>
+      <a href="/loves/reddish.html">Reddish</a>
+      <a href="/loves/kenco.html">Kenco</a>
+      <a href="/loves/kala.html">Kala</a>
+      <a href="/loves/otherstuff.html">Other Stuff</a>
+    </nav>
+
+    <header>
+        <h1>Kenco</h1>
+        <h2>Modernize a 90's logistics site? Sign me up.</h2>
+        <h3>creative director / lead developer / ux and ia</h3>
+    </header>
+
+    <section id="kenco" class="image"></section>
+
+    <section class="content">
+      <h3>So what is this project?</h3>
+      <p>Kenco is one of the largest family-owned and privately-held third-party logistics providers in the country. They are a very inovative company and created their first website in the 90's. The problem was that their website had been added to and added to over the years without a real plan. They reached out to my company to see what we could do. I led a full site restructuring from an IA perspective, created user flows and personas and then built the whole thing with the help of my amazing team of crack engineers and designers.</p>
+
+      <h3>Ok cool, so what did you actually do?</h3>
+      <ul>
+        <li>Creative direction and brand style guide development.</li>
+        <li>User personas. I did hours of interviews with stakeholders of different divisions to come up with several ideal users and taylored the site to them.</li>
+        <li>IA card sorting on hundreads of cards. Seriously, we took over a conference room table for nearly a week.</li>
+        <li>Project management. My boss let me run with the project (thanks Jay). I did everything from creating a deck, to giving the initial pitch, to follow up meetings, to creative direction, to building the site with the help of my team.</li>
+      </ul>
+
+      <h3>Collateral</h3>
+      <figure>
+        <img src="/images/kenco-comp.jpg" alt="Screenshot">
+        <figcaption>Screenshot</figcaption>
+      </figure>
+
+      <figure>
+        <img src="/images/kenco-wireframes.jpg" alt="Wireframes">
+        <figcaption>Wireframes</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/kenco-sitemap.jpg" alt="Sitemap">
+        <figcaption>IA Sitemap</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <p>Copyright 2014 Danielle Swank. All rights reserved. <a href="//github.com/danielleswank/danielleswank.github.com/blob/master/index.html" target="_blank">View Source</a>.</p>
+    </footer>
+
+    <script>
+    (function () {
+      var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
+
+      if (!mobile) {
+        var figures = document.getElementsByTagName("figure");
+        for (var i = 0; i < figures.length; i++) {
+          figures[i].style.backgroundAttachment = "fixed";
+        }
+        var nav = document.getElementsByTagName("nav");
+        nav[0].style.position = "fixed";
+
+        var body = document.getElementsByTagName("body");
+        body[0].style.marginTop = "24px";
+      }
+    }());
+    </script>
+  </body>
+</html>

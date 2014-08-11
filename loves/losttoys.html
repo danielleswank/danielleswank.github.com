@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <title>Lost Toys : Danielle Swank</title>
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900|Roboto+Slab:700' rel='stylesheet' type='text/css'>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/inner.css" rel="stylesheet" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav>
+      <a href="/" class="first">Danielle Swank</a>
+      <a href="/loves/losttoys.html">Lost Toys</a>
+      <a href="/loves/reddish.html">Reddish</a>
+      <a href="/loves/kenco.html">Kenco</a>
+      <a href="/loves/kala.html">Kala</a>
+      <a href="/loves/otherstuff.html">Other Stuff</a>
+    </nav>
+
+    <header>
+        <h1>Lost Toys</h1>
+        <h2>Lots and lots of playtesting...</h2>
+        <h3>lead engineer / game designer / project manager</h3>
+    </header>
+
+    <section id="losttoys" class="image"></section>
+
+    <section class="content">
+      <h3>So what is this project?</h3>
+      <p>Lost Toys is a mobile game that I've been working on since a train ride back from Portland in October 2012. It's the result of hours and hours of playtesting, code arguments and ui revisions. I'm incredibly proud of it. Also here's a bit more about my studio: <a target="_blank" href="//www.youtube.com/watch?v=t3W4Ict6isQ">Sweat, Swearing & Tears</a></p>
+
+      <h3>Ok cool, so what did you actually do?</h3>
+      <ul>
+        <li>Wrote over 50% of the C# code on the game including the rotation algorithm and the 2d screen to 3d game world controls using unity and sublime.</li>
+        <li>Designed multiple game levels and adjusted the difficulty curve based on user feedback and play sessions.</li>
+        <li>Created announcement trailer, release trailer and awards trailer using final cut pro.</li>
+        <li>Designed and implemented 2d marketing materials (business cards, postcards, website exc...) using photoshop and illustrator.</li>
+        <li>A bunch of other stuff that I've forgotten atm. Basically if it needed to get done, I had to do it including managing multiple distributed contractors.</li>
+      </ul>
+
+      <h3>Collateral</h3>
+      <figure>
+        <img src="/images/losttoys-website.png" alt="Website">
+        <figcaption>Website</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/losttoys-icon.png" alt="Icons">
+        <figcaption>App Icon</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/losttoys-poster.png" alt="Poster">
+        <figcaption>Poster</figcaption>
+      </figure>
+    </section>
+
+    <footer>
+      <p>Copyright 2014 Danielle Swank. All rights reserved. <a href="//github.com/danielleswank/danielleswank.github.com/blob/master/index.html" target="_blank">View Source</a>.</p>
+    </footer>
+
+    <script>
+    (function () {
+      var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
+
+      if (!mobile) {
+        var figures = document.getElementsByTagName("figure");
+        for (var i = 0; i < figures.length; i++) {
+          figures[i].style.backgroundAttachment = "fixed";
+        }
+        var nav = document.getElementsByTagName("nav");
+        nav[0].style.position = "fixed";
+
+        var body = document.getElementsByTagName("body");
+        body[0].style.marginTop = "24px";
+      }
+    }());
+    </script>
+  </body>
+</html>
