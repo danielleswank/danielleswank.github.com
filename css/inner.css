@@ -58,6 +58,10 @@ h2 {
   height: auto;
 }
 
+.content a:hover img {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
 .content h3 {
   margin-top: 72px;
 }
