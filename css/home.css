@@ -1,8 +1,10 @@
 header {
   z-index: 1;
   position: absolute;
-  bottom:10%;
-  left: 10%
+  top: 0;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
 }
 
 h3, h4 {
@@ -16,6 +18,8 @@ h1 {
   line-height: 96px;
   margin: 0;
   padding: 0;
+  position: absolute;
+  bottom: 0;
 }
 
 h1 span {
@@ -52,6 +56,7 @@ figure {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (max-width: 960px) {

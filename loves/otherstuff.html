@@ -120,16 +120,13 @@
     (function () {
       var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
 
-      if (!mobile) {
+      if (mobile) {
         var figures = document.getElementsByTagName("figure");
         for (var i = 0; i < figures.length; i++) {
-          figures[i].style.backgroundAttachment = "fixed";
+          figures[i].style.backgroundAttachment = "scroll";
         }
         var nav = document.getElementsByTagName("nav");
-        nav[0].style.position = "fixed";
-
-        var body = document.getElementsByTagName("body");
-        body[0].style.marginTop = "24px";
+        nav[0].style.position = "relative";
       }
     }());
     </script>

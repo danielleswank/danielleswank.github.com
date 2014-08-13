@@ -37,7 +37,7 @@
 
     <div class="content">
       <h3>So what is this project?</h3>
-      <p>Kenco is one of the largest family-owned and privately-held third-party logistics providers in the country. They are a very innovative company and created their first website in the 90's. The problem was that their website had been added to and added to over the years without a real plan. They reached out to my company to see what we could do. I led a full site restructuring from an IA perspective, created user flows and personas and then built the whole thing with the help of my amazing team of crack engineers and designers.</p>
+      <p>Kenco's existing website was showing it's age. I led a full site restructuring from an IA perspective, created user flows and personas and then got the whole thing built with the help of my amazing team of crack engineers and designers.</p>
 
       <h3>Ok cool, so what did you actually do?</h3>
       <ul>
@@ -71,16 +71,13 @@
     (function () {
       var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
 
-      if (!mobile) {
+      if (mobile) {
         var figures = document.getElementsByTagName("figure");
         for (var i = 0; i < figures.length; i++) {
-          figures[i].style.backgroundAttachment = "fixed";
+          figures[i].style.backgroundAttachment = "scroll";
         }
         var nav = document.getElementsByTagName("nav");
-        nav[0].style.position = "fixed";
-
-        var body = document.getElementsByTagName("body");
-        body[0].style.marginTop = "24px";
+        nav[0].style.position = "relative";
       }
     }());
     </script>

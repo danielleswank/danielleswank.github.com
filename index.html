@@ -88,6 +88,7 @@
           <h2>Kenco</h2>
           <h3>ux, creative direction, front-end engineering</h3>
           <p><em>5 companies, one site</em></p>
+          <p>Kenco is one of the largest family-owned and privately-held third-party logistics providers in the country. They are a very innovative company and created their first website in the 90's. The problem was that their website had been added to and added to over the years without a real plan.</p>
           <h4>Features</h4>
           <ul>
             <li>Brand Style Guide</li>
@@ -95,6 +96,7 @@
             <li>Interactive Logistics Map</li>
             <li>Single Web Content Platform</li>
           </ul>
+
           <p>
            <a href="/loves/kenco.html">More Information &raquo;</a><br>
           </p>
@@ -158,16 +160,13 @@
     (function () {
       var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
 
-      if (!mobile) {
+      if (mobile) {
         var figures = document.getElementsByTagName("figure");
         for (var i = 0; i < figures.length; i++) {
-          figures[i].style.backgroundAttachment = "fixed";
+          figures[i].style.backgroundAttachment = "scroll";
         }
         var nav = document.getElementsByTagName("nav");
-        nav[0].style.position = "fixed";
-
-        var body = document.getElementsByTagName("body");
-        body[0].style.marginTop = "24px";
+        nav[0].style.position = "relative";
       }
     }());
     </script>
