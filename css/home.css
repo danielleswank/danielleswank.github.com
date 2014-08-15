@@ -1,23 +1,9 @@
-header, figure {
-  width: 100vw;
-  height: 100vh;
-  min-height: 700px;
-  margin: 0;
-  padding: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
-
 h1 {
-  position: relative;
   font-size: 160px;
   color: #fff;
   text-transform: uppercase;
   line-height: 160px;
-  padding: 40% 0 0 5%;
+  padding: 35% 0 0 5%;
   margin: 0;
 }
 
@@ -34,6 +20,18 @@ h2 {
 
 h3, h4 {
   font-family: 'Roboto Slab', serif;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  min-height: 800px;
+  margin: 0;
+  padding: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 article {
@@ -77,8 +75,8 @@ article > img {
     line-height: 42px;
   }
 
-  figure {
-    height: 401px;
+  header {
+    min-height: 401px;
   }
 }
 
@@ -93,7 +91,7 @@ article > img {
     text-indent: 2px;
   }
 
-  figure {
-    height: 300px;
+  header {
+    min-height: 300px;
   }
 }

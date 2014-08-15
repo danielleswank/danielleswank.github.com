@@ -58,19 +58,19 @@ footer {
 }
 
 @media (min-width: 769px) {
-  #projects, #losttoys { background-image: url(../images/losttoys.jpg); }
-  #mobile > figure, #kala { background-image: url(../images/kala.jpg); }
-  #apps > figure, #reddish { background-image: url(../images/reddish.jpg); }
-  #logistics > figure, #kenco { background-image: url(../images/kenco.jpg); }
-  #stuff > figure, #other { background-image: url(../images/other.jpg); }
-  #contact > figure { background-image: url(../images/contact.jpg); }
+  #losttoys { background-image: url(../images/losttoys.jpg); }
+  #kala { background-image: url(../images/kala.jpg); }
+  #reddish { background-image: url(../images/reddish.jpg); }
+  #kenco { background-image: url(../images/kenco.jpg); }
+  #other { background-image: url(../images/other.jpg); }
+  #contact { background-image: url(../images/contact.jpg); }
 }
 
 @media (max-width: 768px) {
-  #projects, #losttoys { background-image: url(../mobile/losttoys.jpg); }
-  #mobile > figure, #kala { background-image: url(../mobile/kala.jpg); }
-  #apps > figure, #reddish { background-image: url(../mobile/reddish.jpg); }
-  #logistics > figure, #kenco { background-image: url(../mobile/kenco.jpg); }
-  #stuff > figure, #other { background-image: url(../mobile/other.jpg); }
-  #contact > figure { background-image: url(../mobile/contact.jpg); }
+  #losttoys { background-image: url(../mobile/losttoys.jpg); }
+  #kala { background-image: url(../mobile/kala.jpg); }
+  #reddish { background-image: url(../mobile/reddish.jpg); }
+  #kenco { background-image: url(../mobile/kenco.jpg); }
+  #other { background-image: url(../mobile/other.jpg); }
+  #contact { background-image: url(../mobile/contact.jpg); }
 }
