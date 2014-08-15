@@ -90,3 +90,17 @@ footer {
     height: 401px;
   }
 }
+
+@media (max-width: 480px) {
+  header, .content {
+    width: auto;
+    min-width: 280px;
+  }
+
+  .content img {
+    width: 280px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
