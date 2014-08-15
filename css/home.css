@@ -41,14 +41,15 @@ h3, h4 {
 article {
   z-index: 10;
   position: relative;
-  margin: 10%;
+  margin: 48px 10%;
   min-height: 200px;
   background: #fff;
+  overflow: hidden;
 }
 
 article > img {
   float: right;
-  margin: 0 0 10% 15%;
+  margin: 48px 0 48px 48px;
   width: 33%;
 }
 
