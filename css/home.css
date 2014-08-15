@@ -92,7 +92,7 @@ article > img {
   }
 
   header {
-    min-height: 300px;
+    height: 300px;
   }
 
   article {
