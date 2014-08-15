@@ -2,7 +2,7 @@ section, header, footer, menu, aside, article, nav, figure {display: block;}
 
 html,
 body {
-  margin: 0;
+  margin: 24px 0 0 0;
   padding: 0;
   width: 100%;
   height: 100%;
@@ -36,7 +36,6 @@ nav a:hover {
 }
 
 nav .first {
-  margin-right: 48px;
   float: left;
 }
 
@@ -61,7 +60,7 @@ footer {
 }
 
 @media (min-width: 769px) {
-  #games > figure, #losttoys { z-index: 0; background-image: url(../images/losttoys.jpg); }
+  #projects, #losttoys { background-image: url(../images/losttoys.jpg); }
   #mobile > figure, #kala { background-image: url(../images/kala.jpg); }
   #apps > figure, #reddish { background-image: url(../images/reddish.jpg); }
   #logistics > figure, #kenco { background-image: url(../images/kenco.jpg); }
@@ -70,7 +69,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  #games > figure, #losttoys { z-index: 0; background-image: url(../mobile/losttoys.jpg); }
+  #projects, #losttoys { background-image: url(../mobile/losttoys.jpg); }
   #mobile > figure, #kala { background-image: url(../mobile/kala.jpg); }
   #apps > figure, #reddish { background-image: url(../mobile/reddish.jpg); }
   #logistics > figure, #kenco { background-image: url(../mobile/kenco.jpg); }

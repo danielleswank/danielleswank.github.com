@@ -8,8 +8,8 @@
 
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900%7CRoboto+Slab:700' rel='stylesheet' type='text/css'>
-    <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -26,13 +26,12 @@
       <a href="/loves/otherstuff.html">Other Stuff</a>
     </nav>
 
-    <header>
+    <header id="projects">
         <h1><span>Random</span> Projects</h1>
     </header>
 
     <main>
       <div id="games">
-        <figure></figure>
         <article>
           <img alt="Lost Toys Rabbit Level" src="images/rabbit.jpg">
           <h2>Lost Toys</h2>
@@ -157,6 +156,7 @@
     </footer>
 
     <script>
+
     (function () {
       var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowsce|palm/i.test(navigator.userAgent.toLowerCase()));
 
@@ -165,10 +165,11 @@
         for (var i = 0; i < figures.length; i++) {
           figures[i].style.backgroundAttachment = "scroll";
         }
-        var nav = document.getElementsByTagName("nav");
-        nav[0].style.position = "relative";
+        var projects = document.getElementById("projects");
+        projects.style.backgroundAttachment = "scroll";
       }
     }());
+
     </script>
 
   </body>
