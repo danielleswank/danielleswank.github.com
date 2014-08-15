@@ -7,9 +7,10 @@
     <title>Danielle Swank : Projects</title>
 
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900%7CRoboto+Slab:700' rel='stylesheet' type='text/css'>
-    <link href="css/home.css" rel="stylesheet" type="text/css">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,900%7CRoboto+Slab:700' rel='stylesheet' type='text/css'>
+
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/home.css" rel="stylesheet" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -167,6 +168,10 @@
         }
         var projects = document.getElementById("projects");
         projects.style.backgroundAttachment = "scroll";
+
+        var nav = document.getElementsByTagName("nav");
+        nav[0].style.position = "relative";
+        nav[0].style.marginTop = "-24px";
       }
     }());
 
