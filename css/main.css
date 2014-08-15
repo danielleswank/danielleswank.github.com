@@ -74,3 +74,15 @@ footer {
   #other { background-image: url(../mobile/other.jpg); }
   #contact { background-image: url(../mobile/contact.jpg); }
 }
+
+
+@media (max-width: 480px) {
+  nav {
+    text-align: left;
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+  }
+}

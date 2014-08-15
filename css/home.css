@@ -64,7 +64,7 @@ article > img {
 @media (max-width: 768px) {
   h1 {
     font-size: 80px;
-    line-height: 52px;
+    line-height: 80px;
   }
 
   h1 span {
@@ -82,8 +82,9 @@ article > img {
 
 @media (max-width: 480px) {
   h1 {
+    padding: 55% 0 0 5%;
     font-size: 48px;
-    line-height: 32px;
+    line-height: 48px;
   }
 
   h1 span {
