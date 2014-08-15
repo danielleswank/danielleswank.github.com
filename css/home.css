@@ -94,4 +94,12 @@ article > img {
   header {
     min-height: 300px;
   }
+
+  article {
+    margin: 24px 5%;
+  }
+
+  article > img {
+    display: none;
+  }
 }
